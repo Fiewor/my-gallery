@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: none;
+}
+
+body {
+    text-align: center;
+}
+
+img {
+    border-radius: 5px;
+}
+
+#profile-img {
+    width: 5vw;
+    height: 10vh;
+}
+
+.boxes {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 1em;
+    justify-content: center;
+    margin: 1rem auto;
+}
+
+.boxes div {
+    background-color: gray;
+    border-radius: 5px;
+    padding: 2rem rem;
+}
+
+.image-container {
+    border: 1px solid red;
+    display: grid;
+    justify-content: stretch;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "one two two"
+        "three three four"
+        "five six four";
+    gap: 0.5rem;
+    margin: 1em 5em;
+    width: 100vw;
+    height: 100vh;
+}
+
+#img1 {
+    grid-area: one;
+}
+
+#img2 {
+    grid-area: two;
+}
+
+#img3 {
+    grid-area: three;
+}
+
+#img4 {
+    grid-area: four;
+}
+
+#img5 {
+    grid-area: five;
+}
+#img6 {
+    grid-area: six;
+}
+
+footer {
+    color: gray;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: gray;
+}
+
+@media screen and (max-width:768px){
+    footer {
+        font-size: 0.8em;
+    }
+}
